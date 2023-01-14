@@ -8,9 +8,12 @@ setup(
     author_email='artythedev@gmail.com',
     url='https://github.com/ArtyTheDev/hatsu',
     packages=[
-        "tinyws.core",
-        "tinyws.protocols",
+        "hatsu.core",
+        "hatsu.protocols",
     ],
+    install_requires=[
+        "h11", "wsproto"
+    ]
     python_requires=">=3.6",
     platforms="any",
 )
